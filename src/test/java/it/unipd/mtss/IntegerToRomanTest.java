@@ -44,4 +44,38 @@ public class IntegerToRomanTest {
 
         assertEquals(expected, output);
     }
+
+    @Test
+    public void testPrint4() {
+        int number = 4;
+        String expected = """
+                 _____  __      __\s
+                |_   _| \\ \\    / /\s
+                  | |    \\ \\  / / \s
+                  | |     \\ \\/ /  \s
+                 _| |_     \\  /   \s
+                |_____|     \\/    \s
+                """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void testPrint6() {
+        int number = 6;
+        String expected = """
+                __      __  _____ \s
+                \\ \\    / / |_   _|\s
+                 \\ \\  / /    | |  \s
+                  \\ \\/ /     | |  \s
+                   \\  /     _| |_ \s
+                    \\/     |_____|\s
+                    """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
 }

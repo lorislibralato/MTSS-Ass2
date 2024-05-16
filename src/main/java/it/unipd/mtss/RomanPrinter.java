@@ -16,7 +16,14 @@ public class RomanPrinter {
                       | |  \s
                       | |  \s
                      _| |_ \s
-                    |_____|\s""".split("\n"));
+                    |_____|\s""".split("\n"),
+            'V', """
+                    __      __\s
+                    \\ \\    / /\s
+                     \\ \\  / / \s
+                      \\ \\/ /  \s
+                       \\  /   \s
+                        \\/    \s""".split("\n"));
 
     public static String print(int num) {
         return printAsciiArt(IntegerToRoman.convert(num));
