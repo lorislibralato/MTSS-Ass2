@@ -194,7 +194,58 @@ public class IntegerToRomanTest {
                             """;
 
         String output = RomanPrinter.print(number);
-        
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void testPrint94() {
+        int number = 94;
+        String expected = """
+                __   __   _____   _____  __      __\s
+                \\ \\ / /  / ____| |_   _| \\ \\    / /\s
+                 \\ V /  | |        | |    \\ \\  / / \s
+                  > <   | |        | |     \\ \\/ /  \s
+                 / . \\  | |____   _| |_     \\  /   \s
+                /_/ \\_\\  \\_____| |_____|     \\/    \s
+                                """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void testPrint97() {
+        int number = 97;
+        String expected = """
+                __   __   _____  __      __  _____   _____ \s
+                \\ \\ / /  / ____| \\ \\    / / |_   _| |_   _|\s
+                 \\ V /  | |       \\ \\  / /    | |     | |  \s
+                  > <   | |        \\ \\/ /     | |     | |  \s
+                 / . \\  | |____     \\  /     _| |_   _| |_ \s
+                /_/ \\_\\  \\_____|     \\/     |_____| |_____|\s
+                                """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void testPrint100() {
+        int number = 100;
+        String expected = """
+                  _____ \s
+                 / ____|\s
+                | |     \s
+                | |     \s
+                | |____ \s
+                 \\_____|\s
+                                 """;
+
+        String output = RomanPrinter.print(number);
+
         assertEquals(expected, output);
     }
 }

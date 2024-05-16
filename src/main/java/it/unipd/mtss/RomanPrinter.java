@@ -39,6 +39,14 @@ public class RomanPrinter {
                     | |     \s
                     | |____ \s
                     |______|\s
+                        """.split("\n"),
+            'C', """
+                 _____ \s
+                / ____|\s
+               | |     \s
+               | |     \s
+               | |____ \s
+                \\_____|\s
                         """.split("\n"));
 
     public static String print(int num) {

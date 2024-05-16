@@ -11,6 +11,8 @@ public class IntegerToRoman {
     }
 
     private static final Pair[] VALUES = {
+            new Pair(100, "C"),
+            new Pair(90, "XC"),
             new Pair(50, "L"),
             new Pair(40, "XL"),
             new Pair(10, "X"),
