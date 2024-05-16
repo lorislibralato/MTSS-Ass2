@@ -31,6 +31,14 @@ public class RomanPrinter {
                       > <  \s
                      / . \\ \s
                     /_/ \\_\\\s
+                        """.split("\n"),
+            'L', """
+                     _      \s
+                    | |     \s
+                    | |     \s
+                    | |     \s
+                    | |____ \s
+                    |______|\s
                         """.split("\n"));
 
     public static String print(int num) {
