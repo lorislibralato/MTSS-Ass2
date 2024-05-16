@@ -50,6 +50,13 @@ public class ExtensiveIntegerToRomanTest {
                 { "97","XCVII" },
                 { "99","XCIX" },
                 { "100","C" },
+                { "178","CLXXVIII" },
+                { "200","CC" },
+                { "248","CCXLVIII" },
+                { "444","CDXLIV"},
+                { "471","CDLXXI"},
+                { "499","CDXCIX"},
+                { "500","D" },
         };
         return Arrays.asList(tests);
     }

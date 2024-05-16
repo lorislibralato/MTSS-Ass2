@@ -248,4 +248,72 @@ public class IntegerToRomanTest {
 
         assertEquals(expected, output);
     }
+
+    @Test
+    public void testPrint248() {
+        int number = 248;
+        String expected = """
+                  _____    _____  __   __  _       __      __  _____   _____   _____ \s
+                 / ____|  / ____| \\ \\ / / | |      \\ \\    / / |_   _| |_   _| |_   _|\s
+                | |      | |       \\ V /  | |       \\ \\  / /    | |     | |     | |  \s
+                | |      | |        > <   | |        \\ \\/ /     | |     | |     | |  \s
+                | |____  | |____   / . \\  | |____     \\  /     _| |_   _| |_   _| |_ \s
+                 \\_____|  \\_____| /_/ \\_\\ |______|     \\/     |_____| |_____| |_____|\s
+                                      """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void testPrint444() {
+        int number = 444;
+        String expected = """
+                  _____   _____   __   __  _        _____  __      __\s
+                 / ____| |  __ \\  \\ \\ / / | |      |_   _| \\ \\    / /\s
+                | |      | |  | |  \\ V /  | |        | |    \\ \\  / / \s
+                | |      | |  | |   > <   | |        | |     \\ \\/ /  \s
+                | |____  | |__| |  / . \\  | |____   _| |_     \\  /   \s
+                 \\_____| |_____/  /_/ \\_\\ |______| |_____|     \\/    \s
+                                      """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void testPrint499() {
+        int number = 499;
+        String expected = """
+                  _____   _____   __   __   _____   _____  __   __\s
+                 / ____| |  __ \\  \\ \\ / /  / ____| |_   _| \\ \\ / /\s
+                | |      | |  | |  \\ V /  | |        | |    \\ V / \s
+                | |      | |  | |   > <   | |        | |     > <  \s
+                | |____  | |__| |  / . \\  | |____   _| |_   / . \\ \s
+                 \\_____| |_____/  /_/ \\_\\  \\_____| |_____| /_/ \\_\\\s
+                                      """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void testPrint500() {
+        int number = 500;
+        String expected = """
+                 _____  \s
+                |  __ \\ \s
+                | |  | |\s
+                | |  | |\s
+                | |__| |\s
+                |_____/ \s
+                                     """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
 }

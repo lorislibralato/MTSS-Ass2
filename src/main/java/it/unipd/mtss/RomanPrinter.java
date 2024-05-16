@@ -41,13 +41,21 @@ public class RomanPrinter {
                     |______|\s
                         """.split("\n"),
             'C', """
-                 _____ \s
-                / ____|\s
-               | |     \s
-               | |     \s
-               | |____ \s
-                \\_____|\s
-                        """.split("\n"));
+                      _____ \s
+                     / ____|\s
+                    | |     \s
+                    | |     \s
+                    | |____ \s
+                     \\_____|\s
+                             """.split("\n"),
+            'D', """
+                     _____  \s
+                    |  __ \\ \s
+                    | |  | |\s
+                    | |  | |\s
+                    | |__| |\s
+                    |_____/ \s
+                                 """.split("\n"));
 
     public static String print(int num) {
         return printAsciiArt(IntegerToRoman.convert(num));
