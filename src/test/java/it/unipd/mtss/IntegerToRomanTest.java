@@ -112,4 +112,38 @@ public class IntegerToRomanTest {
 
         assertEquals(expected, output);
     }
+
+    @Test
+    public void testPrint17() {
+        int number = 17;
+        String expected = """
+            __   __ __      __  _____   _____ \s
+            \\ \\ / / \\ \\    / / |_   _| |_   _|\s
+             \\ V /   \\ \\  / /    | |     | |  \s
+              > <     \\ \\/ /     | |     | |  \s
+             / . \\     \\  /     _| |_   _| |_ \s
+            /_/ \\_\\     \\/     |_____| |_____|\s
+                    """;
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
+
+    @Test
+    public void testPrint20() {
+        int number = 20;
+        String expected = """
+            __   __ __   __\s
+            \\ \\ / / \\ \\ / /\s
+             \\ V /   \\ V / \s
+              > <     > <  \s
+             / . \\   / . \\ \s
+            /_/ \\_\\ /_/ \\_\\\s
+                    """;
+
+        String output = RomanPrinter.print(number);
+        
+        assertEquals(expected, output);
+    }
 }
