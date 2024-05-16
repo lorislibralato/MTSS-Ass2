@@ -55,7 +55,15 @@ public class RomanPrinter {
                     | |  | |\s
                     | |__| |\s
                     |_____/ \s
-                                 """.split("\n"));
+                                 """.split("\n"),
+            'M', """
+                     __  __ \s
+                    |  \\/  |\s
+                    | \\  / |\s
+                    | |\\/| |\s
+                    | |  | |\s
+                    |_|  |_|\s
+                                     """.split("\n"));
 
     public static String print(int num) {
         return printAsciiArt(IntegerToRoman.convert(num));

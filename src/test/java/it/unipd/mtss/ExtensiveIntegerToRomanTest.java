@@ -57,6 +57,10 @@ public class ExtensiveIntegerToRomanTest {
                 { "471","CDLXXI"},
                 { "499","CDXCIX"},
                 { "500","D" },
+                { "617","DCXVII" },
+                { "981","CMLXXXI" },
+                { "999","CMXCIX" },
+                { "1000","M" },
         };
         return Arrays.asList(tests);
     }
