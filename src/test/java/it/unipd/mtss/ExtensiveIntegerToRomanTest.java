@@ -35,6 +35,8 @@ public class ExtensiveIntegerToRomanTest {
                 { "4", "IV" },
                 { "5", "V" },
                 { "6", "VI" },
+                { "9", "IX" },
+                { "10", "X" },
         };
         return Arrays.asList(tests);
     }

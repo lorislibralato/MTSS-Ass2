@@ -23,7 +23,15 @@ public class RomanPrinter {
                      \\ \\  / / \s
                       \\ \\/ /  \s
                        \\  /   \s
-                        \\/    \s""".split("\n"));
+                        \\/    \s""".split("\n"),
+            'X', """
+                    __   __\s
+                    \\ \\ / /\s
+                     \\ V / \s
+                      > <  \s
+                     / . \\ \s
+                    /_/ \\_\\\s
+                        """.split("\n"));
 
     public static String print(int num) {
         return printAsciiArt(IntegerToRoman.convert(num));
