@@ -30,6 +30,29 @@
 
   <build>
     <plugins>
+      <!-- test reports -->
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.12</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      <!-- coverage -->
+      <plugin>
+        <groupId>com.github.hazendaz.maven</groupId>
+        <artifactId>coveralls-maven-plugin</artifactId>
+        <version>4.5.0-M2</version>
+        <configuration>
+          <repoToken>${env.COVERALLS_REPO_TOKEN}</repoToken>
+        </configuration>
+      </plugin>
+      <!-- checkstyle-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
