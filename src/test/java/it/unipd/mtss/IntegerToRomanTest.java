@@ -25,4 +25,11 @@ public class IntegerToRomanTest {
 
         IntegerToRoman.convert(arabic_number);
     }
+
+    @Test(expected = NumberOverFiveThousandException.class)
+    public void testConvertNumOverOrEqualFiveThousand() {
+        int arabic_number = 5000;
+
+        IntegerToRoman.convert(arabic_number);
+    }
 }

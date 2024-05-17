@@ -31,6 +31,10 @@ public class IntegerToRoman {
             throw new NegativeNumberException();
         }
 
+        if (number >= 5000) {
+            throw new NumberOverFiveThousandException();
+        }
+
         StringBuilder output = new StringBuilder();
         int rem = number;
 
