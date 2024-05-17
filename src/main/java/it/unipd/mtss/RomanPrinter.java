@@ -72,6 +72,10 @@ public class RomanPrinter {
     private static String printAsciiArt(String romanNumber) {
         var builder = new StringBuilder();
 
+        if (romanNumber.isEmpty()) {
+            return "";
+        }
+
         for (int j = 0; j < 6; j++) {
             for (int i = 0; i < romanNumber.length(); i++) {
                 builder.append(ROMAN_MAP.get(romanNumber.charAt(i))[j]);

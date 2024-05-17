@@ -27,6 +27,10 @@ public class IntegerToRoman {
     };
 
     public static String convert(int number) {
+        if (number < 0) {
+            throw new NegativeNumberException();
+        }
+
         StringBuilder output = new StringBuilder();
         int rem = number;
 

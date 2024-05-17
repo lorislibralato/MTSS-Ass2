@@ -11,6 +11,23 @@ import org.junit.Test;
 
 public class RomanPrinterTest {
 
+    @Test(expected = NegativeNumberException.class)
+    public void testPrintNegativeNum() {
+        int number = -6;
+
+        RomanPrinter.print(number);
+    }
+
+    @Test
+    public void testPrint0() {
+        int number = 0;
+        String expected = "";
+
+        String output = RomanPrinter.print(number);
+
+        assertEquals(expected, output);
+    }
+
     @Test
     public void testPrint1() {
         int number = 1;
